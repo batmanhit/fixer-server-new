@@ -63,7 +63,6 @@ export default {
 
   BankAccount: {
     bank: async (bankAccount, args, { loaders }) => {
-      console.log('bankAccount: ', bankAccount);
       return await loaders.bank.load(bankAccount.bankId);
     },
     branch: async (bankAccount, args, { loaders }) => {

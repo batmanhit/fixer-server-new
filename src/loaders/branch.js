@@ -2,11 +2,8 @@
 export const batchBranches = async (keys, models) => {
   const branches = await models.Branch.findAll({
     where: {
-      id: {
-        $in: keys,
-      },
+      id: keys,
     },
   });
-
   return keys.map(key => branches.find(branch => branch.id === key));
 };

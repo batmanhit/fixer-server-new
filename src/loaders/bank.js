@@ -2,9 +2,7 @@
 export const batchBanks = async (keys, models) => {
   const banks = await models.Bank.findAll({
     where: {
-      id: {
-        $in: keys,
-      },
+      id: keys,
     },
   });
 
