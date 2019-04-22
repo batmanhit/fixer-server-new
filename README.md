@@ -10,7 +10,7 @@ Apollo Server with Express.
 * fill out *.env file* (see below)
 * start PostgreSQL database
 * `npm start`
-* visit `http://localhost:8000` for GraphQL playground
+* visit [this link](http://18.236.164.66:8000/graphql) for GraphQL playground
 
 #### .env file
 
